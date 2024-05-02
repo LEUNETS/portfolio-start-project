@@ -6,13 +6,14 @@ import { Menu } from "../../components/menu/Menu";
 export const Header = () => {
   return (
     <StyledHeader>
-      <Logo />
-      <Menu />
+    <Logo />
+    <Menu />
     </StyledHeader>
   );
 };
 
 const StyledHeader = styled.header`
-  background-color: #1c97a4;
+  background-color: #a2a3a3;
+  display: flex;
+  justify-content: space-between;
 `;
-//rafc (export)   //    ul>li*5>a //
