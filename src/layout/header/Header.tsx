@@ -15,4 +15,4 @@ export const Header = () => {
 const StyledHeader = styled.header`
   background-color: #1c97a4;
 `;
-//rafc (export)   //    ul>li*5>a
+//rafc (export)   //    ul>li*5>a //
