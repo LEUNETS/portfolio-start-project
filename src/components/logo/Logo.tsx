@@ -4,7 +4,7 @@ import { Icon } from "../icon/Icon";
 export const Logo = () => {
   return (
     <a href="">
-      <Icon iconId={"test-svg"} />
+      <Icon iconId={"react-svg"} />
     </a>
   );
 };
