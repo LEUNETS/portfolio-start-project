@@ -7,4 +7,8 @@ export const Logo = () => {
     <Icon iconId={'testIcon'}/>
 </a>
   )
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c99aead655c5bc409a2bded12643408f921adc13
