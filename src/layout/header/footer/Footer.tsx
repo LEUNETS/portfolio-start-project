@@ -39,7 +39,7 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
-background-color: #d6e3ef;
+background-color: #c3cbd3;
 min-height: 20vh;
 `;
 const Name = styled.span`
