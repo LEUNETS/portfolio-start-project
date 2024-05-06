@@ -37,7 +37,7 @@ const Slide = styled.div`
 const Text = styled.p``;
 const Name = styled.span``;
 
-const Pagination = styled.span`
+const Pagination = styled.div`
 span {
     display: inline-block;
     width: 20px;

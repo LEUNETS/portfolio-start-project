@@ -5,15 +5,21 @@ import { Main } from "./layout/header/secthion/main/Main";
 import { Skills } from "./layout/header/secthion/main/skills/Skills";
 import { Works } from "./layout/header/secthion/works/Works";
 import { Testimony } from "./layout/header/secthion/testimony/Testimony";
+import { Contact } from "./layout/header/secthion/contacts/Contacts";
+import { Slogan } from "./layout/header/secthion/slogan/Slogan";
+import { Footer } from "./layout/header/footer/Footer";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Main />
-      <Skills/>
+      <Skills />
       <Works />
       <Testimony />
+      <Contact />
+      <Slogan />
+      <Footer />
     </div>
   );
 }
