@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { FlexWrapper } from "../../../../../components/FlexWrapper";
 import { SecthionTitle } from "../../../../../components/SecthionTitle";
 import { Skill } from "./skill/Skill";
-import { Icon } from "../../../../../components/icon/Icon";
 
 export const Skills = () => {
   return (

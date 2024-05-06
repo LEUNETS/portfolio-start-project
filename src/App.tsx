@@ -3,6 +3,8 @@ import styled from "styled-components";
 import { Header } from "./layout/header/Header";
 import { Main } from "./layout/header/secthion/main/Main";
 import { Skills } from "./layout/header/secthion/main/skills/Skills";
+import { Works } from "./layout/header/secthion/works/Works";
+import { Testimony } from "./layout/header/secthion/testimony/Testimony";
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <Header />
       <Main />
       <Skills/>
+      <Works />
+      <Testimony />
     </div>
   );
 }
