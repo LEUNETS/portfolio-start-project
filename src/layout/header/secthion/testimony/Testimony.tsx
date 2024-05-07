@@ -4,13 +4,16 @@ import { SecthionTitle } from "../../../../components/SecthionTitle";
 import { Icon } from './../../../../components/icon/Icon';
 import { Slider } from "../../../../components/slider/Slider";
 import { FlexWrapper } from "../../../../components/FlexWrapper";
+import { IconWrapper } from "../skill/Skill";
 
 export const Testimony = () => {
   return (
     <StyledTestimony>
       <SecthionTitle>Testimony</SecthionTitle>
       <FlexWrapper directhion={"column"} align={"center"}>
-      <Icon iconId={"quote-svg"}/>
+        <IconWrapper>
+        <Icon iconId={"quote-svg"}/>
+        </IconWrapper>
     <Slider />
       </FlexWrapper>
     </StyledTestimony>
@@ -20,4 +23,8 @@ export const Testimony = () => {
 const StyledTestimony = styled.section`
 background-color: #b1c5d6dc;
 min-height: 50vh;
+
+${IconWrapper} {
+  margin: 40px 0 72px;
+}
 `

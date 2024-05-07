@@ -9,11 +9,12 @@ import { Contact } from "./layout/header/secthion/contacts/Contacts";
 import { Slogan } from "./layout/header/secthion/slogan/Slogan";
 import { Footer } from "./layout/header/footer/Footer";
 
+
 function App() {
   return (
     <div className="App">
       <Header />
-      <Main />
+      <Main/>
       <Skills />
       <Works />
       <Testimony />
