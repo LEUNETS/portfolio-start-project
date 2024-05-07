@@ -12,7 +12,7 @@ type SkillPropsType = {
 export const Skill = (props: SkillPropsType) => {
   return (
     <StyledSkill>
-      <FlexWrapper directhion={"column"} align={"center"}>
+      <FlexWrapper direction={"column"} align={"center"}>
         <IconWrapper>
           <Icon iconId={props.iconId} />
         </IconWrapper>
