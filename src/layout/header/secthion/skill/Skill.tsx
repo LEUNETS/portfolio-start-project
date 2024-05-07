@@ -1,7 +1,7 @@
 import React from "react";
-import { Icon } from "../../../../../../components/icon/Icon";
+import { Icon } from "../../../../components/icon/Icon";
 import { styled } from "styled-components";
-import { FlexWrapper } from "../../../../../../components/FlexWrapper";
+import { FlexWrapper } from "../../../../components/FlexWrapper";
 
 type SkillPropsType = {
   iconId: string;
@@ -47,17 +47,9 @@ const IconWrapper = styled.div`
 
 const SkillTitle = styled.h3`
   margin: 70px 0 15px;
-  font-family: "Josefin-Sans", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-
-  letter-spacing: 1px;
   text-transform: uppercase;
 `;
 
 const SkillText = styled.p`
   text-align: center;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4;
 `;

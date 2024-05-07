@@ -43,9 +43,9 @@ const PhotoWrapper = styled.div`
     border: 5px solid ${theme.colors.accent};
 
     position: absolute;
-    top: -190px; //ручной хардкод.
-    left: 145px; //ручной хардкод.
-    height: 440px; //не должно быть тут.
+    top: -240px; //ручной хардкод.
+    left: 130px; //ручной хардкод.
+    height: 480px; //не должно быть тут.
     /* top: -24px;
     left: 24px; */ //так должно быть.
     z-index: -2; //не сработал.

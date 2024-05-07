@@ -6,5 +6,5 @@ width: 100%;
 min-height: 100%;
 padding: 0 15px;
 margin: 0 auto;
-outlin: 1px solid red; //если скрыть - то же самое (?)
+outline: 1px solid red;
 `

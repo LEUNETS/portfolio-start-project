@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { FlexWrapper } from "../../../../../components/FlexWrapper";
-import { SecthionTitle } from "../../../../../components/SecthionTitle";
-import { Skill } from "./skill/Skill";
-import { Container } from "../../../../../components/Container";
+import { FlexWrapper } from "../../../../components/FlexWrapper";
+import { SecthionTitle } from "../../../../components/SecthionTitle";
+import { Skill } from "../skill/Skill";
+import { Container } from "../../../../components/Container";
 
 export const Skills = () => {
   return (

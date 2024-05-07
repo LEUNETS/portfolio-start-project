@@ -2,7 +2,7 @@ import "./App.css";
 import styled from "styled-components";
 import { Header } from "./layout/header/Header";
 import { Main } from "./layout/header/secthion/main/Main";
-import { Skills } from "./layout/header/secthion/main/skills/Skills";
+import { Skills } from "./layout/header/secthion/skills/Skills";
 import { Works } from "./layout/header/secthion/works/Works";
 import { Testimony } from "./layout/header/secthion/testimony/Testimony";
 import { Contact } from "./layout/header/secthion/contacts/Contacts";
