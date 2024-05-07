@@ -11,6 +11,7 @@ export const Link = styled.a`
   position: relative;
   z-index: 0;
 
+
   &:hover {
     &::before {
       height: 10px;// с помощью высоты прячем элемент.

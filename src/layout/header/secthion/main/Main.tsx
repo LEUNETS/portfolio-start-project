@@ -17,9 +17,9 @@ export const Main = () => {
             </Name>
             <MainTitle>A Web Developer.</MainTitle>
           </div>
-          <PhotoWrapper></PhotoWrapper>
-
-          <Photo src={photo} alt="" />
+          <PhotoWrapper>
+            <Photo src={photo} alt="" />
+          </PhotoWrapper>
         </FlexWrapper>
       </Container>
     </StyledMain>
@@ -43,12 +43,9 @@ const PhotoWrapper = styled.div`
     border: 5px solid ${theme.colors.accent};
 
     position: absolute;
-    top: -240px; //ручной хардкод.
-    left: 130px; //ручной хардкод.
-    height: 480px; //не должно быть тут.
-    /* top: -24px;
-    left: 24px; */ //так должно быть.
-    z-index: -2; //не сработал.
+    top: -24px;
+    left: 24px; 
+    z-index: -1;
   }
 `;
 
@@ -56,7 +53,6 @@ const Photo = styled.img`
   width: 350px;
   height: 430px;
   object-fit: cover;
-  z-index: 1; // не должно быть тут.
 `;
 const MainTitle = styled.h1`
   font-weight: 400;
