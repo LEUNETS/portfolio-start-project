@@ -18,6 +18,9 @@ tablet: "screen and (max-width: 768px)",
 mobile: "screen and (max-width: 576px)",
 desktop: "screen and (max-width: 1140px)",
 
-}
+},
 
+animations: {
+    transition: ".2s ease-in-out"
+}
 }
