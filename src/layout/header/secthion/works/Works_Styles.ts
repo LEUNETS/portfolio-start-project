@@ -3,6 +3,7 @@ import {theme} from "../../../../styles/Theme";
 import {Link} from "../../../../components/Link";
 import {Button} from "../../../../components/Button";
 import {FlexWrapper} from "../../../../components/FlexWrapper";
+import {motion} from "framer-motion";
 
 
 const Works = styled.section`
@@ -13,11 +14,11 @@ const Works = styled.section`
     }
 `;
 
-const Work = styled.div`
+const Work = styled(motion.div)`
     background-color: ${theme.colors.secondaryBg};
-    max-width: 540px;
-    width: 330px;
-    flex-grow: 1;
+    //max-width: 540px;
+    //width: 330px;
+    //flex-grow: 1;
 
     ${Link} {
         padding: 10px 0;
@@ -27,9 +28,9 @@ const Work = styled.div`
         }
     }
 
-    @media ${theme.media.desktop} {
-        max-width: 540px;
-    }
+    // @media ${theme.media.desktop} {
+    //     max-width: 540px;
+    // }
 `;
 
 const ImageWrapper = styled.div`

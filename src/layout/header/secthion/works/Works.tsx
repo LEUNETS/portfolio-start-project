@@ -7,6 +7,7 @@ import timerImg from "./../../../../assets/images/lesson-2.png";
 import {Container} from "../../../../components/Container";
 import {TabMenu, TabsStatusType} from './tabMenu/TabMenu';
 import {S} from './Works_Styles'
+import {AnimatePresence, motion} from "framer-motion";
 
 // const tabsItems = ["ALL", "Landing Page", "React", "spa"];
 
@@ -36,7 +37,8 @@ const worksData = [
         text: "Summertime,white Porche Carrera is milky I'm on the grind let my " +
             "paper stack when I'm filthy It's funny how niggas get the screw facin' at me Anyhow, " +
             "they aint got the heart to get at me I'll get down, Southside's the hood that I come from",
-        type: "spa"
+        type: "spa",
+        id: 1
     },
     {
         title: "Timer",
@@ -44,8 +46,46 @@ const worksData = [
         text: "So I don't cruise to nobody hood without my gun You know the kid ain't gon' " +
             "fall for all that bullshit Try and stick me, I'ma let off a full clip It ain't " +
             "my fault you done fucked up your re-up",
-        type: "react"
+        type: "react",
+        id: 2
     },
+    {
+        title: "Social Network",
+        src: socialImg,
+        text: "Summertime,white Porche Carrera is milky I'm on the grind let my " +
+            "paper stack when I'm filthy It's funny how niggas get the screw facin' at me Anyhow, " +
+            "they aint got the heart to get at me I'll get down, Southside's the hood that I come from",
+        type: "spa",
+        id: 3
+    },
+    {
+        title: "Timer",
+        src: timerImg,
+        text: "So I don't cruise to nobody hood without my gun You know the kid ain't gon' " +
+            "fall for all that bullshit Try and stick me, I'ma let off a full clip It ain't " +
+            "my fault you done fucked up your re-up",
+        type: "react",
+        id: 4
+    },
+    {
+        title: "Social Network",
+        src: socialImg,
+        text: "Summertime,white Porche Carrera is milky I'm on the grind let my " +
+            "paper stack when I'm filthy It's funny how niggas get the screw facin' at me Anyhow, " +
+            "they aint got the heart to get at me I'll get down, Southside's the hood that I come from",
+        type: "spa",
+        id: 5
+    },
+    {
+        title: "Timer",
+        src: timerImg,
+        text: "So I don't cruise to nobody hood without my gun You know the kid ain't gon' " +
+            "fall for all that bullshit Try and stick me, I'ma let off a full clip It ain't " +
+            "my fault you done fucked up your re-up",
+        type: "react",
+        id: 6
+    },
+
 
 ]
 
@@ -63,7 +103,7 @@ export const Works: React.FC = () => {
         filtredWorks = worksData.filter(work => work.type === "spa")
     }
 
-    function changeFilterStatus (value: TabsStatusType ) {
+    function changeFilterStatus(value: TabsStatusType) {
         setCurrentFilterStatus(value)
     }
 
@@ -72,13 +112,27 @@ export const Works: React.FC = () => {
             <Container>
                 <SecthionTitle>My Works</SecthionTitle>
                 <TabMenu tabsItems={tabsItems} changeFilterStatus={changeFilterStatus}
-                currentFilterStatus={currentFilterStatus}/>
+                         currentFilterStatus={currentFilterStatus}/>
                 <FlexWrapper justify={"space-between"} align={"flex-start"} wrap={"wrap"}>
-                    {filtredWorks.map((w) => {
-                        return <Work title={w.title}
-                                     src={w.src}
-                                     text={w.text}/>
-                    })}
+                    <AnimatePresence>
+                        {filtredWorks.map((w) => {
+                            return (
+                                <motion.div style={{maxWidth: "400px",width: "330px", flexGrow: "1"}}
+                                    layout
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    exit={{ opacity: 0 }}
+                                    key={w.id}
+                                >
+                                    <Work title={w.title}
+                                          src={w.src}
+                                          text={w.text}
+                                          key={w.id}
+                                    />
+                                </motion.div>
+                            )
+                        })}
+                    </AnimatePresence>
                 </FlexWrapper>
             </Container>
         </S.Works>
