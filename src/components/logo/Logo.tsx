@@ -1,10 +1,13 @@
 import React from "react";
-import { Icon } from "../icon/Icon";
+import {Icon} from "../icon/Icon";
+import {animateScroll as scroll} from "react-scroll";
 
 export const Logo: React.FC = () => {
-  return (
-    <a href="">
-      <Icon iconId={"react-svg"} />
-    </a>
-  );
+    return (
+        <a onClick={() => {
+            scroll.scrollToTop()
+        }}>
+            <Icon iconId={"react-svg"}/>
+        </a>
+    );
 };

@@ -68,7 +68,7 @@ export const Works: React.FC = () => {
     }
 
     return (
-        <S.Works>
+        <S.Works id={"works"}>
             <Container>
                 <SecthionTitle>My Works</SecthionTitle>
                 <TabMenu tabsItems={tabsItems} changeFilterStatus={changeFilterStatus}
